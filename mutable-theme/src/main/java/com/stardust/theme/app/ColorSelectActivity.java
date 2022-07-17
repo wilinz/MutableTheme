@@ -35,6 +35,7 @@ import com.stardust.theme.ThemeColorManager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -94,11 +95,9 @@ public class ColorSelectActivity extends AppCompatActivity {
         int startRadius = 0;
         int endRadius = (int) Math.hypot(view.getWidth(), view.getHeight());
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            Animator anim = ViewAnimationUtils.createCircularReveal(view, x, y, startRadius, endRadius);
-            anim.setDuration(500);
-            anim.start();
-        }
+        Animator anim = ViewAnimationUtils.createCircularReveal(view, x, y, startRadius, endRadius);
+        anim.setDuration(500);
+        anim.start();
         mCurrentColor = colorTo;
 
     }
@@ -137,7 +136,7 @@ public class ColorSelectActivity extends AppCompatActivity {
         mToolbar = findViewById(R.id.toolbar);
         mToolbar.setTitle(mTitle);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

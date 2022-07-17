@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 33
+    buildToolsVersion "32.0.0"
 
     defaultConfig {
         applicationId "com.stardust.theme.sample"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -27,10 +27,10 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.1-alpha01', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'com.google.android.material:material:1.1.0-alpha01'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.7.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha03'
+    testImplementation 'junit:junit:4.13.2'
     implementation project(':mutable-theme')
     implementation 'com.jrummyapps:colorpicker:2.1.5'
 }

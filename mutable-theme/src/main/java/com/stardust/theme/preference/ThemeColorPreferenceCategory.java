@@ -23,7 +23,6 @@ public class ThemeColorPreferenceCategory extends PreferenceCategory implements 
     private TextView mTitleTextView;
     private int mColor = Color.TRANSPARENT;
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public ThemeColorPreferenceCategory(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();

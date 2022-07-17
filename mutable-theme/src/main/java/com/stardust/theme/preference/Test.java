@@ -11,7 +11,6 @@ import android.util.AttributeSet;
  */
 
 public class Test extends SwitchPreference {
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public Test(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }

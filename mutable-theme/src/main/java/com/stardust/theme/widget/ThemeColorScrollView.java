@@ -33,7 +33,6 @@ public class ThemeColorScrollView extends ScrollView implements ThemeColorMutabl
         init();
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public ThemeColorScrollView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();

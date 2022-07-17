@@ -57,22 +57,19 @@ public class ThemeColorManager {
     }
 
     public static void addActivityNavigationBar(final Activity activity) {
-        if (Build.VERSION.SDK_INT > 19) {
-            ThemeColorWidgetReferenceManager.add(new ThemeColorMutableReference() {
-                WeakReference<Activity> weakReference = new WeakReference<>(activity);
+        ThemeColorWidgetReferenceManager.add(new ThemeColorMutableReference() {
+            WeakReference<Activity> weakReference = new WeakReference<>(activity);
 
-                @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-                @Override
-                public void setThemeColor(ThemeColor color) {
-                    activity.getWindow().setNavigationBarColor(color.colorPrimary);
-                }
+            @Override
+            public void setThemeColor(ThemeColor color) {
+                activity.getWindow().setNavigationBarColor(color.colorPrimary);
+            }
 
-                @Override
-                public boolean isNull() {
-                    return weakReference.get() == null;
-                }
-            });
-        }
+            @Override
+            public boolean isNull() {
+                return weakReference.get() == null;
+            }
+        });
     }
 
     public static int getColorPrimary() {
@@ -160,16 +157,12 @@ public class ThemeColorManager {
     private static class StatusBarManager {
         private static Vector<WeakReference<Activity>> activities = new Vector<>();
 
-        @TargetApi(21)
         public static void add(Activity activity) {
-            if (Build.VERSION.SDK_INT >= 21) {
-                activities.add(new WeakReference<>(activity));
-                if (shouldApplyThemeColor())
-                    activity.getWindow().setStatusBarColor(themeColor.colorPrimary);
-            }
+            activities.add(new WeakReference<>(activity));
+            if (shouldApplyThemeColor())
+                activity.getWindow().setStatusBarColor(themeColor.colorPrimary);
         }
 
-        @TargetApi(21)
         public static void setColor(int color) {
             Iterator<WeakReference<Activity>> iterator = activities.iterator();
             while (iterator.hasNext()) {

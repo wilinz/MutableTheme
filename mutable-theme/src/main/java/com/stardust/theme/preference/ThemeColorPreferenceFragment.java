@@ -1,5 +1,6 @@
 package com.stardust.theme.preference;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.preference.PreferenceFragment;
@@ -15,7 +16,7 @@ import java.lang.reflect.Field;
 /**
  * Created by Stardust on 2016/8/14.
  */
-@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+@SuppressLint("SoonBlockedPrivateApi")
 public class ThemeColorPreferenceFragment extends PreferenceFragment implements ThemeColorMutable {
 
     private static Field LIST_VIEW;

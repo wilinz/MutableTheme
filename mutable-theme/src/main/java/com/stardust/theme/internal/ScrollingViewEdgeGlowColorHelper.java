@@ -28,31 +28,33 @@ public class ScrollingViewEdgeGlowColorHelper {
         LIST_VIEW_FIELD_EDGE_GLOW_BOTTOM = fields[0];
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void setEdgeGlowColor(AbsListView listView, int color) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            try {
-                EdgeEffect ee = (EdgeEffect) LIST_VIEW_FIELD_EDGE_GLOW_TOP.get(listView);
+        try {
+            EdgeEffect ee = (EdgeEffect) LIST_VIEW_FIELD_EDGE_GLOW_TOP.get(listView);
+            if (ee != null) {
                 ee.setColor(color);
-                ee = (EdgeEffect) LIST_VIEW_FIELD_EDGE_GLOW_BOTTOM.get(listView);
-                ee.setColor(color);
-            } catch (Exception ex) {
-                ex.printStackTrace();
             }
+            ee = (EdgeEffect) LIST_VIEW_FIELD_EDGE_GLOW_BOTTOM.get(listView);
+            if (ee != null) {
+                ee.setColor(color);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void setEdgeGlowColor(ScrollView scrollView, int color) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            try {
-                EdgeEffect ee = (EdgeEffect) SCROLL_VIEW_FIELD_EDGE_GLOW_TOP.get(scrollView);
+        try {
+            EdgeEffect ee = (EdgeEffect) SCROLL_VIEW_FIELD_EDGE_GLOW_TOP.get(scrollView);
+            if (ee != null) {
                 ee.setColor(color);
-                ee = (EdgeEffect) SCROLL_VIEW_FIELD_EDGE_GLOW_BOTTOM.get(scrollView);
-                ee.setColor(color);
-            } catch (Exception ex) {
-                ex.printStackTrace();
             }
+            ee = (EdgeEffect) SCROLL_VIEW_FIELD_EDGE_GLOW_BOTTOM.get(scrollView);
+            if (ee != null) {
+                ee.setColor(color);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 

@@ -26,7 +26,6 @@ public class ThemeColorSwitchPreference extends SwitchPreference implements Them
     private View mCheckableView;
     private int mColor = Color.TRANSPARENT;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public ThemeColorSwitchPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();

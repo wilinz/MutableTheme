@@ -20,7 +20,6 @@ public class ThemeColorCheckBoxPreference extends CheckBoxPreference {
         init();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public ThemeColorCheckBoxPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MutableTheme.iml" filepath="$PROJECT_DIR$/MutableTheme.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mutable-theme/mutable-theme.iml" filepath="$PROJECT_DIR$/mutable-theme/mutable-theme.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MutableTheme.iml" filepath="$PROJECT_DIR$/.idea/modules/MutableTheme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.iml" filepath="$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mutable-theme/MutableTheme.mutable-theme.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/MutableTheme.sample.unitTest.iml" />
     </modules>
   </component>
 </project>
